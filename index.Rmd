@@ -168,47 +168,16 @@ class: center, middle
 
 ---
 
+class: center, middle
+
 # <font color =#F8A53A>FisFa - Fiscaliza Fatura</font>
 ### **Aplicativo para fiscalização das faturas dos Agentes Financeiros do FIES**  
 
-.pull-left[
-<code> 
-### **Contextualização:**
-
-- impossibilidade de fiscalizar o serviço prestado por BB e CEF ao FIES
-
-- junto às faturas, vinham bases com dados dos alunos financiados (~ 1,7 milhão de linhas cada)
-
-</code>
-
-]
-
-
-.pull-right[
-<code> 
-
-**Valores:**  
-
-- mensal: ~ R$ 40 milhões cada
-
-- anual: ~ 1 bilhão de reais
-
-**Implicações:**
-
-- responsabilização do fiscal de contratos
-
-- responsabilização dos gestores
-
-<!-- - impossibilidade de identificar irregularidades nas bases de dados e na cobrança -->
-
-</code>
-]
 
 
 ---
 
 class: inverse, center, middle
-
 
 <img src="./img/fisfa.PNG" style="float: right; width: 100%; margin-right: 1%; margin-bottom: 0.5em;">
 
@@ -277,7 +246,13 @@ class: center, middle
 
 ![](./img/quant_logo.png)
 
-Assessoria técnica vinculada à Assessoria de Gestão Estratégica e Governança/Presidência
+Assessoria técnica vinculada 
+
+à 
+
+Assessoria de Gestão Estratégica e Governança
+
+Presidência
 
 
 ---
@@ -307,7 +282,10 @@ class: center, middle
 
 __Hardware/Software:__
 
-![](./img/estrutura_quant_clean.png)
+<!-- ![](./img/estrutura_quant_clean.png) -->
+```{r, out.width = "400px", echo=FALSE}
+knitr::include_graphics("./img/estrutura_quant_clean.png")
+```
 </code>
 
 ]
@@ -510,7 +488,11 @@ __Metodologia para identificação de sobre-preço__
 
 __Metodologia para ranqueamento de municípios__
 
-![](./img/ranking_PAR.png)    
+<!-- ![](./img/ranking_PAR.png){width=150px} -->
+```{r, out.width = "250px", echo=FALSE}
+knitr::include_graphics("./img/ranking_PAR.png")
+```
+
 
 ]
 
