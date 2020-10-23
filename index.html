@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Ciência de Dados na Administração Pública</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Allan V. C. Quadros" />
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="css/middlebury.css" type="text/css" />
+    <link rel="stylesheet" href="css/middlebury-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# <code><font color=#4C5455>Ciência de Dados na </font><font color=#F8A53A>Administração Pública</font></code>
+### Allan V. C. Quadros
+### Assessor Técnico de Métodos Quantitativos - FNDE </br> 23 de outubro, 2020
+
+---
+
+
+
+
+layout: true
+background-image: url(./img/logo/fnde_blue.jpg)
+background-position: 0% 100%
+background-size: 5%
+
+---
+
+background-image: url(./img/dollar1.jpg)
+background-size: 80%
+background-position: 50% 50%
+
+
+---
+
+class: inverse, center, middle
+&lt;!-- title-slide-section-grey,  --&gt;
+
+## "In God we trust. All other must bring data."
+&lt;p style="text-align:right"&gt;W. Edwards Deming&lt;/p&gt;
+
+---
+
+class: inverse, center, middle
+## &lt;font color =#76DFEC&gt;Nosso &lt;/font&gt;&lt;font color =#C2DB70&gt;objetivo...&lt;/font&gt;
+
+&lt;/br&gt;
+&lt;/br&gt;
+
+
+---
+
+class: inverse, center, middle
+&lt;!-- title-slide-section-grey,  --&gt;
+
+# &lt;font color =#76DFEC&gt;o &lt;font&gt;&lt;font color =#F8A53A&gt;FNDE&lt;font&gt;
+
+
+---
+
+class: inverse, center, middle
+&lt;!-- title-slide-section-grey,  --&gt;
+
+# &lt;code&gt;&lt;font color =#C2DB70&gt;$$$&lt;/font&gt;&lt;/code&gt;
+
+&lt;iframe src="./img/plotly_orcamento.html" width="90%" height="50%" scrolling="no" seamless="seamless" frameBorder="1"&gt; &lt;/iframe&gt;
+
+---
+
+## &lt;font color =#C2DB70&gt;Programas&lt;font&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+
+&lt;img src="./img/programas_fnde.PNG" style="float: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;"&gt;
+  
+&lt;img src="./img/fies_logo.jpg" style="float: center; width: 15%; margin-right: 1%; margin-bottom: 0.5em;"&gt;
+&lt;img src="./img/saleduc_logo.jpg" style="float: center; width: 15%; margin-right: 1%; margin-bottom: 0.5em;"&gt;
+&lt;img src="./img/fundeb_logo.png" style="float: center; width: 15%; margin-right: 1%; margin-bottom: 0.5em;"&gt;
+
+---
+
+class: inverse, center, middle
+&lt;!-- title-slide-section-grey,  --&gt;
+
+## &lt;code&gt;&lt;font color =#76DFEC&gt;Como &lt;/font&gt;&lt;font color =#C2DB70&gt;o &lt;/font&gt;&lt;font color =#F8A53A&gt;FNDE &lt;/font&gt;&lt;font color =#C2DB70&gt;lida(va) com esse imenso volume de dados&lt;/font&gt;&lt;font color =#4C5455&gt;?&lt;/font&gt;&lt;/code&gt;
+
+
+---
+
+class: inverse, center, middle
+
+
+&lt;img src="./img/excel_logo.jpg" style="float: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;"&gt;
+
+
+---
+
+
+&lt;img src="./img/basic_arithmetic.png" style="float: center; width: 50%; margin-right: 1%; margin-bottom: 0.5em;"&gt;
+
+
+---
+
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+
+&lt;img src="./img/summation.png" style="float: left; width: 25%; margin-right: 1%; margin-bottom: 0.5em;"&gt;
+
+
+---
+
+&lt;/br&gt;
+
+&lt;img src="./img/mu.png" style="float: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;"&gt;
+
+---
+
+class: center, middle
+# &lt;font color =#F8A53A&gt;Resumo do problema&lt;/font&gt;
+
+.pull-left[
+
+&lt;code&gt;
+
+- imensa quantidade de dados
+
+- dados extremamente sensíveis (financeiros, estratégicos)
+
+&lt;/code&gt;
+
+]
+
+--
+
+.pull-right[
+
+&lt;code&gt;
+**análise de dados pouco profissional:**
+
+  &gt; projeções equivocadas;
+  
+  &gt; indicadores inócuos/imprecisos;
+  
+  &gt; controles falhos;
+  
+  &gt; retrabalho;
+  
+  &gt; desperdício de tempo;
+  
+  &gt; desperdício de &lt;font color =#C2DB70&gt;$$$$&lt;/font&gt;
+
+&lt;/code&gt;
+
+]
+
+
+---
+
+class: center, middle
+&lt;!-- # &lt;font color =#F8A53A&gt;O projeto pioneiro...&lt;/font&gt; --&gt;
+# &lt;code&gt;&lt;font color =#76DFEC&gt;O projeto &lt;/font&gt;&lt;font color =#F35A94&gt;pioneiro&lt;/font&gt;&lt;/code&gt;
+
+---
+
+# &lt;font color =#F8A53A&gt;FisFa - Fiscaliza Fatura&lt;/font&gt;
+### **Aplicativo para fiscalização das faturas dos Agentes Financeiros do FIES**  
+
+.pull-left[
+&lt;code&gt; 
+### **Contextualização:**
+
+- impossibilidade de fiscalizar o serviço prestado por BB e CEF ao FIES
+
+- junto às faturas, vinham bases com dados dos alunos financiados (~ 1,7 milhão de linhas cada)
+
+&lt;/code&gt;
+
+]
+
+
+.pull-right[
+&lt;code&gt; 
+
+**Valores:**  
+
+- mensal: ~ R$ 40 milhões cada
+
+- anual: ~ 1 bilhão de reais
+
+**Implicações:**
+
+- responsabilização do fiscal de contratos
+
+- responsabilização dos gestores
+
+&lt;!-- - impossibilidade de identificar irregularidades nas bases de dados e na cobrança --&gt;
+
+&lt;/code&gt;
+]
+
+
+---
+
+class: inverse, center, middle
+
+
+&lt;img src="./img/fisfa.PNG" style="float: right; width: 100%; margin-right: 1%; margin-bottom: 0.5em;"&gt;
+
+
+---
+
+&lt;code&gt; 
+## **Resultados FisFa:**
+
+.pull-left[
+
+**tempo de análise de uma fatura:**
+
+- passou de uma semana para &lt; 1 minuto
+
+**maior confiabilidade e robustez na análise**
+
+**economia direta:**
+
+- acima de R$200 milhões até 2018 💰
+
+- diversos contratos em situação irregular
+
+**economia indireta:**
+
+- sem contratação de empresa de TI 💰
+
+- hora/trabalho de servidores 💰
+
+- identificação de erros na própria base do FNDE/MEC
+
+]
+
+
+.pull-right[
+
+**Prêmios:**
+
+&lt;img src="./img/premio_cgu.png" style="float: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;"&gt;
+
+&lt;img src="./img/premio_angc.jpg" style="float: left; width: 65%; margin-right: 1%; margin-bottom: 0.5em;"&gt;
+
+
+]
+
+
+
+---
+
+class: inverse, center, middle
+&lt;!-- title-slide-section-grey,  --&gt;
+
+# &lt;code&gt;&lt;font color =#4C5455&gt;Como estamos &lt;/font&gt;&lt;font color =#F8A53A&gt;hoje&lt;/font&gt;&lt;font color =#4C5455&gt;?&lt;/font&gt;&lt;/code&gt;
+
+
+---
+
+class: inverse, center, middle
+&lt;!-- title-slide-section-grey,  --&gt;
+
+# &lt;code&gt;&lt;font color =#4C5455&gt;O &lt;/font&gt;&lt;font color =#F8A53A&gt;Núcleo de Métodos Quantitativos &lt;/font&gt;&lt;font color =#76DFEC&gt;(QUANT)&lt;/font&gt;&lt;/code&gt;
+
+---
+
+class: center, middle
+
+.pull-left[
+
+![](./img/quant_logo.png)
+
+Assessoria técnica vinculada à Assessoria de Gestão Estratégica/Presidência
+]
+
+--
+
+.pull-right[
+
+&lt;code&gt;
+&lt;br&gt;
+
+I) propor metodologias estatístico-computacionais para subsidiar projetos estratégicos e
+sensíveis;
+
+II) acompanhar atividades que envolvam os temas de análise de dados e modelagem
+estatístico-computacional no âmbito do FNDE;
+
+III) atuar na proposição, acompanhamento e revisão dos indicadores.
+
+&lt;/code&gt;
+
+]
+
+
+---
+
+class: center, middle
+# &lt;code&gt;&lt;font color =#4C5455&gt;Estrutura&lt;/font&gt;
+
+.pull-left[
+
+&lt;code&gt;
+
+**Pessoal:**
+
+  &gt; 5 pessoas (3 estatísticos, 1 engenheiro de produção, 1 cientista da computação);
+
+  &gt; 2 servidores e 3 consultores
+
+&lt;/code&gt;
+
+]
+
+--
+
+.pull-right[
+
+&lt;code&gt;
+
+__Hardware/Software:__
+
+![](./img/estrutura_quant_clean.png)
+&lt;/code&gt;
+
+]
+
+---
+
+class: inverse, center, middle
+
+
+## &lt;code&gt;&lt;font color =#76DFEC&gt;Projetos em &lt;/font&gt;&lt;font color =#F35A94&gt;andamento...&lt;/font&gt;&lt;/code&gt;
+
+
+---
+
+# &lt;code&gt;&lt;font color =#C2DB70&gt;Malha-Fina FNDE&lt;/font&gt;&lt;/code&gt;
+### **Análise de prestações de contas por meio de mineração de dados**  
+
+.pull-left[
+&lt;code&gt; 
+### **Contextualização:**
+
+- FNDE é responsável pela descentralização de recursos de cerca de 33 programas (5.570 municípios, 27 estados + entidades)
+
+**obrigação de prestar contas:**
+
+- toda descentralização gera uma obrigação de prestar contas por parte do ente/entidade
+
+- a obrigação do FNDE é analisar **TODAS**
+
+
+&lt;/code&gt;
+
+]
+
+
+.pull-right[
+&lt;code&gt; 
+
+**Números anuais:**  
+
+- entrada: ~ 35.000 processos
+
+- capacidade de análise*: ~ 3.500
+
+- passivo: 290 mil prestações de contas
+
+- $$$$: ~ R$90 bilhoes
+
+**Probemas:**
+
+- gestores terminam mandatos sem contas analisadas
+
+- eventuais danos ao erário são identificados tardiamente 💸
+
+&lt;/code&gt;
+]
+
+
+---
+
+# &lt;code&gt;&lt;font color =#C2DB70&gt;Malha-Fina FNDE&lt;/font&gt;&lt;/code&gt;
+
+.pull-left[
+&lt;code&gt;
+**Solução:**
+
+- aprendizagem de máquina supervisionada - classificação
+
+- retorna uma probabilidade (nota de risco) de dano ao erário
+
+&lt;/code&gt;
+
+]
+
+--
+
+.pull-right[
+
+&lt;code&gt;
+
+**Resultados:**
+
+- eliminação do passivo em ~ 5 anos
+
+- economia de mais de R$ 3 bilhoes 💰
+
+- economia de mais de meio século de trabalho 💰
+
+- redução do ímpeto de fraude 
+
+&lt;/code&gt;
+
+]
+
+
+---
+
+class: center, middle
+# &lt;code&gt;&lt;font color =#F8A53A&gt;Estimativa da quantidade de livros a serem comprados no &lt;font color =#76DFEC&gt;PNLD&lt;/font&gt;&lt;/font&gt;&lt;/code&gt;
+
+
+---
+
+# &lt;font color =#76DFEC&gt;Programa Nacional do Livro Didático - PNLD&lt;/font&gt;
+### **Séries temporais para estimar o número de alunos para cada série em todas as escolas do Brasil**  
+
+&lt;code&gt; 
+### **Contextualização:**
+
+.pull-left[
+- Todo ano o FNDE realiza a compra centralizada e distribuição dos livros didáticos de todas as escolas públicas do país
+
+- são 5.570 municípios, 27 estados
+
+- as escolas tem liberdade para escolherem seu material didático
+
+]
+
+--
+
+.pull-right[
+**problema:**
+
+- as escolas não tem obrigação de informar número de alunos
+
+**Como fazíamos a estimativa:**
+&lt;/code&gt;
+
+- `\(Q_{2020} = Q_{2019} + \delta x\)`, `\(\delta x = 🧙\)`
+
+]
+
+
+---
+
+&lt;code&gt; 
+## **Resultados Estimativa PNLD**
+
+&lt;br&gt;
+
+- Metodologia científica para gestão de riscos;
+
+
+- Dados confiáveis - censo escolar;
+
+
+- Possibilidade inclusive de estimar o erro;
+
+
+- Indícios de melhora com relação ao método anterior
+
+
+---
+
+class: inverse, center, middle
+
+
+## &lt;code&gt;&lt;font color =#F8A53A&gt;Outras &lt;/font&gt;&lt;font color =#76DFEC&gt;iniciativas &lt;/font&gt;&lt;font color =#C2DB70&gt; e projetos&lt;/font&gt;&lt;/code&gt;
+
+
+---
+
+&lt;br&gt;
+&lt;br&gt;
+
+
+.pull-left[
+
+__Painel de Indicadores__
+
+![](./img/painel_indicadores.png)
+]
+
+--
+
+.pull-right[
+
+__Painel de Gestão__
+
+![](./img/painel_gestao.jpeg)
+
+]
+
+
+---
+
+&lt;br&gt;
+&lt;br&gt;
+
+.pull-left[
+
+__Metodologia para identificação de sobre-preço__
+
+![](./img/outlier_preco.png)
+
+]
+
+
+--
+
+.pull-right[
+
+__Metodologia para ranqueamento de municípios__
+
+![](./img/ranking_PAR.png)    
+
+]
+
+---
+
+class: inverse, center, middle
+
+## &lt;code&gt;&lt;font color =#76DFEC&gt;Como &lt;/font&gt;&lt;font color =#C2DB70&gt;chegamos &lt;/font&gt;&lt;font color =#F8A53A&gt;até &lt;/font&gt;&lt;font color =#C2DB70&gt;aqui&lt;/font&gt;&lt;font color =#4C5455&gt;?&lt;/font&gt;&lt;/code&gt;
+
+---
+
+class: center, middle
+# &lt;font color =#F8A53A&gt;Reconhecer Limitações e Vantagens&lt;/font&gt;
+
+.pull-left[
+
+&lt;code&gt;
+
+**Vantagens:**
+
+  &gt; grande disponibilidade e variedade de dados;
+
+  &gt; facilidade para se capacitar (licenças, escolas de governo, MOOCS)
+
+  &gt;  áreas de T.I. não conseguem acompanhar a necessidade de informação das áreas de negócio
+
+&lt;/code&gt;
+
+]
+
+--
+
+.pull-right[
+
+&lt;code&gt;
+
+**Limitações:**
+
+  &gt; restrições de &lt;font color =#C2DB70&gt;$$$$&lt;/font&gt;;
+
+  &gt; restrições de pessoal (especializado);
+
+  &gt; LGPD;
+
+  &gt; burocracia;
+
+  &gt; __resistência à mudança__
+
+&lt;/code&gt;
+
+]
+
+
+---
+
+class: inverse, center, middle
+&lt;!-- title-slide-section-grey,  --&gt;
+
+# &lt;font color =#76DFEC&gt;Como superar &lt;font&gt;&lt;font color =#F8A53A&gt;a resistência à mudança&lt;font color =#4C5455&gt;?&lt;/font&gt;&lt;/code&gt;
+
+---
+
+class: center, middle
+# &lt;font color =#F8A53A&gt;Vencendo a resistência...&lt;/font&gt;
+
+.pull-left[
+
+&lt;code&gt;
+
+**"compre" seu patrocínio:**
+
+  &gt;  entregar primeiro, prometer depois
+
+  &gt; escolher quais "batalhas" lutar (regra de Pareto)
+
+  &gt; investir no bom relacionamento com: chefia, áreas de negócio, T.I.
+  
+  &gt; se atenha à regra dos 5 dias
+
+&lt;/code&gt;
+
+]
+
+--
+
+.pull-right[
+
+&lt;code&gt;
+
+__investir em capacitação:__ 
+
+  &gt; primar pelo conhecimento estatístico-matemático
+
+  &gt; se você sabe Python, aprenda R; se sabe R, aprenda Python
+
+&lt;/code&gt;
+
+]
+
+
+---
+
+class: title-slide-final, middle
+background-image: url()
+background-size: 100px
+background-position: 9% 15%
+
+# Obrigado!!
+
+&lt;/br&gt;
+&lt;/br&gt;
+
+## &lt;code&gt;&lt;font color =#F8A53A&gt;Duvidas &lt;/font&gt;&lt;font color =#76DFEC&gt;ou &lt;/font&gt;&lt;font color =#C2DB70&gt;Perguntas?&lt;/font&gt;&lt;/code&gt;
+
+
+
+### .white[Contato:]
+
+&lt;p&gt;
+&lt;a href="mailto:allan.quadros@fnde.gov.br"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt; allan.quadros@fnde.gov.br&lt;/a&gt;
+&lt;/p&gt;
+
+
+&lt;!-- como colocar figuras ao lado de palavras varias vezes em html --&gt;
+&lt;div&gt;
+    &lt;p&gt;Feito no
+    &lt;img src="./img/rball.png" style="float: center; width: 4%;"&gt; com 
+    &lt;img src="./img/xaringan.png" style="float: center; width: 3.8%;"&gt;.
+    &lt;/p&gt;
+&lt;/div&gt;
+
+Apresentação disponível em:
+
+&lt;p&gt;
+&lt;a href="https://allanvc.github.io/slide_WIDaT2019/" style="color:navyblue"&gt;https://allanvc.github.io/slide_SNCTNF2020/&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;br&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="./js/midd_xaringan.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
