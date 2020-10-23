@@ -275,31 +275,9 @@ class: inverse, center, middle
 
 class: center, middle
 
-.pull-left[
-
 ![](./img/quant_logo.png)
 
-Assessoria técnica vinculada à Assessoria de Gestão Estratégica/Presidência
-]
-
---
-
-.pull-right[
-
-<code>
-<br>
-
-I) propor metodologias estatístico-computacionais para subsidiar projetos estratégicos e
-sensíveis;
-
-II) acompanhar atividades que envolvam os temas de análise de dados e modelagem
-estatístico-computacional no âmbito do FNDE;
-
-III) atuar na proposição, acompanhamento e revisão dos indicadores.
-
-</code>
-
-]
+Assessoria técnica vinculada à Assessoria de Gestão Estratégica e Governança/Presidência
 
 
 ---
@@ -351,8 +329,6 @@ class: inverse, center, middle
 <code> 
 ### **Contextualização:**
 
-- FNDE é responsável pela descentralização de recursos de cerca de 33 programas (5.570 municípios, 27 estados + entidades)
-
 **obrigação de prestar contas:**
 
 - toda descentralização gera uma obrigação de prestar contas por parte do ente/entidade
@@ -378,7 +354,7 @@ class: inverse, center, middle
 
 - $$$$: ~ R$90 bilhoes
 
-**Probemas:**
+**Problemas:**
 
 - gestores terminam mandatos sem contas analisadas
 
@@ -451,9 +427,9 @@ class: center, middle
 --
 
 .pull-right[
-**problema:**
+**Problema:**
 
-- as escolas não tem obrigação de informar número de alunos
+- Não se conhece o número de alunos do próximo ano
 
 **Como fazíamos a estimativa:**
 </code>
@@ -669,7 +645,7 @@ background-position: 9% 15%
 Apresentação disponível em:
 
 <p>
-<a href="https://allanvc.github.io/slide_WIDaT2019/" style="color:navyblue">https://allanvc.github.io/slide_SNCTNF2020/</a>
+<a href="https://allanvc.github.io/slide_SNCTNF2020/" style="color:navyblue">https://allanvc.github.io/slide_SNCTNF2020/</a>
 </p>
 
 <br>
